@@ -17,7 +17,10 @@ export default function App() {
                         <Text style={styles.buttonText}>+</Text>
                     </TouchableOpacity>
                 </View>
-                <View style={styles.contener_input}>
+                <View style={styles.contener_resultado}>
+                    <Event/>
+                    <Event/>
+                    <Event/>
                     <Event/>
                 </View>
             </View>
