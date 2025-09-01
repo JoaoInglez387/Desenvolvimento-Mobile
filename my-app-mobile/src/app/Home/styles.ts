@@ -4,15 +4,30 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#ffffff',
-        alignItems: 'flex-start',
+        alignItems: 'center',
         justifyContent: 'center',
+        marginLeft: 10,
+        marginRight: 10,
     },
 
     titulo_container: {
-        flex: 1,
-        alignItems: 'flex-start',
+        display: "flex",
+        alignItems: 'center',
         justifyContent: 'center',
-        margin: 3,
+        paddingBottom: 20,
+    },
+
+    contener_person: {
+        display: 'flex',
+        justifyContent: 'center',
+        width: "100%"
+    },
+
+    contener_input: {
+        display: 'flex',
+        alignItems: "center",
+        flexDirection: "row",
+        marginBottom: 20,
     },
 
     text_titul: {
@@ -20,7 +35,6 @@ export const styles = StyleSheet.create({
         fontWeight: "bold",
         color: "black",
         paddingBottom: 20,
-
     },
 
     text_legend: {
@@ -31,19 +45,27 @@ export const styles = StyleSheet.create({
     },
 
     input: {
+        flex: 1,
         textAlign: 'left',
         color: "black",
         borderWidth: 2,
         borderColor: "#6dccff",
-        borderRadius: 13,
-        marginBottom: 15,
-        width: 380
+        borderRadius: 8,
+    },
+
+    button: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "#4fc1ff",
+        borderRadius: 8,
+        width: 45,
+        height: 45,
     },
 
     buttonText: {
-        backgroundColor: "#4fc1ff",
-        width: 56,
-        height: 56,
-    },
+        fontSize: 17,
+        color: "white",
+    }
 
 });
