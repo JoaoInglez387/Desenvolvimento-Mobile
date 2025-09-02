@@ -2,12 +2,14 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
     container: {
+        display: "flex",
         flex: 1,
-        backgroundColor: '#ffffff',
         alignItems: 'center',
         justifyContent: 'center',
-        marginLeft: 10,
-        marginRight: 10,
+        flexDirection: "column",
+        backgroundColor: '#ffffff',
+        marginLeft: 7,
+        marginRight: 7,
     },
 
     titulo_container: {
@@ -27,7 +29,25 @@ export const styles = StyleSheet.create({
         display: 'flex',
         alignItems: "center",
         flexDirection: "row",
-        marginBottom: 20,
+        gap: 8,
+        marginBottom: 15,
+    },
+
+    contener_resultado: {
+        display: "flex",
+        alignItems: "center",
+        backgroundColor: "#DEEFE7",
+        borderColor: "#159A9C",
+        borderWidth: 2,
+        borderRadius: 10,
+        gap: 10,
+        padding: 10,
+        marginBottom: "20%"
+    },
+
+    contener_salve: {
+        display: "flex",
+        width:"60%"
     },
 
     text_titul: {
@@ -37,19 +57,26 @@ export const styles = StyleSheet.create({
         paddingBottom: 20,
     },
 
+    sub_titul: {
+        fontSize: 20,
+        fontWeight: "bold",
+        color: "#002333",
+        paddingBottom: 20,
+    },
+
     text_legend: {
         fontSize: 17,
         textAlign: 'left',
-        color: "#48bfff",
+        color: "#159A9C",
         paddingBottom: 10,
     },
 
     input: {
         flex: 1,
         textAlign: 'left',
-        color: "black",
+        color: "#002333",
         borderWidth: 2,
-        borderColor: "#6dccff",
+        borderColor: "#159A9C",
         borderRadius: 8,
     },
 
@@ -57,15 +84,17 @@ export const styles = StyleSheet.create({
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#4fc1ff",
+        backgroundColor: "#159A9C",
+        color: "white",
         borderRadius: 8,
         width: 45,
         height: 45,
     },
 
     buttonText: {
+        textAlign: "center",
         fontSize: 17,
         color: "white",
-    }
+    },
 
 });

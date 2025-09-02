@@ -18,13 +18,16 @@ export default function App() {
                     </TouchableOpacity>
                 </View>
                 <View style={styles.contener_resultado}>
-                    <Event/>
-                    <Event/>
-                    <Event/>
-                    <Event/>
+                    <Text style={styles.sub_titul}>Lista de Eventos</Text>
+                    <Event name='Evento Novo'/>
+                    <Event name='Evento da Turma'/>
+                    <Event name='Evento da Igreja'/>
+                    <Event name='Evento dos Guris'/>
                 </View>
             </View>
-            <Button title="Salvar" onPress={() => console.log("Deu certo")}/>
+            <View style={styles.contener_salve}>
+                <Button title="Salvar" onPress={() => console.log("Deu certo")}/>
+            </View>
             <StatusBar style="auto" />
         </View>
     );
