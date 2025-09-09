@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { styles } from './styles';
 import { Event } from '../../components/Event';
 import { Button, Text, TextInput, Touchable, TouchableOpacity, View } from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 export default function App() {
     return (
@@ -13,7 +14,7 @@ export default function App() {
                 <View style={styles.contener_input}>
                     <TextInput style={styles.input} placeholder='Digite algo' placeholderTextColor={"grey"}/>
                     <TouchableOpacity style={styles.button} activeOpacity={0.5}>
-                        <Text style={styles.buttonText}>+</Text>
+                        <Ionicons name="add-circle-outline" size={28} color="white" />
                     </TouchableOpacity>
                 </View>
                 <View style={styles.contener_resultado}>

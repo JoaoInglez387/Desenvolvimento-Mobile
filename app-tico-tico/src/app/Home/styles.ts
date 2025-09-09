@@ -3,26 +3,26 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
     container: {
         display: "flex",
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
         flexDirection: "column",
+        flex: 1,
         backgroundColor: '#ffffff',
-        marginLeft: 7,
-        marginRight: 7,
+        marginLeft: 10,
+        marginRight: 10,
+        marginBottom:+10
     },
 
     caberacio_container: {
         display: "flex",
-        alignItems: 'center',
-        justifyContent: 'center',
+        alignItems: 'flex-start',
+        paddingTop: 50,
         paddingBottom: 20,
     },
 
     contener_person: {
         display: 'flex',
+        flex: 1,
         justifyContent: 'center',
-        width: "100%"
+        width: "100%",
     },
 
     contener_input: {
@@ -35,14 +35,14 @@ export const styles = StyleSheet.create({
 
     contener_resultado: {
         display: "flex",
+        flex: 1,
         alignItems: "center",
-        backgroundColor: "#DEEFE7",
-        borderColor: "#159A9C",
+        backgroundColor: "white",
+        borderColor: "black",
         borderWidth: 2,
-        borderRadius: 10,
-        gap: 10,
+        borderRadius: 20,
+        gap: 12,
         padding: 10,
-        marginBottom: "20%"
     },
 
     contener_salve: {
@@ -51,6 +51,7 @@ export const styles = StyleSheet.create({
     },
 
     text_titul: {
+        textAlign: "left",
         fontSize: 28,
         fontWeight: "bold",
         color: "black",
@@ -68,8 +69,9 @@ export const styles = StyleSheet.create({
         flex: 1,
         textAlign: 'left',
         color: "#002333",
-        borderWidth: 2,
-        borderColor: "#159A9C",
+        backgroundColor: "black",
+        padding: 10,
+        borderWidth: 8,
         borderRadius: 8,
     },
 
@@ -77,17 +79,12 @@ export const styles = StyleSheet.create({
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#159A9C",
+        backgroundColor: "black",
         color: "white",
         borderRadius: 8,
-        width: 45,
-        height: 45,
-    },
-
-    buttonText: {
-        textAlign: "center",
-        fontSize: 17,
-        color: "white",
+        width: 55,
+        height: 55, 
+        borderWidth: 8,
     },
 
 });

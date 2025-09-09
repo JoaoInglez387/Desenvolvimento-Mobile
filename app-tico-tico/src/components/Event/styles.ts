@@ -6,7 +6,10 @@ export const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "row",
-        gap: 8,
+        borderBottomWidth: 2,
+        borderBottomColor: "black",
+        paddingTop: 10,
+        gap: 10,
     },
 
     textEvent: {
@@ -15,28 +18,8 @@ export const styles = StyleSheet.create({
         flex: 1,
         textAlign: "left",
         fontSize: 16,
-        color: "#002333",
-        backgroundColor: "white",
-        borderWidth: 2,
-        borderColor: "#159A9C",
-        borderRadius: 8,
-        padding: 10
+        fontWeight: "bold",
+        color: "black",
     },
-
-    button: {
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "#FF4B4B",
-        borderRadius: 8,
-        width: 45,
-        height: 45,
-    },
-
-    buttonText: {
-        fontSize: 17,
-        fontWeight: "600",
-        color: "white",
-    }
 
 })
