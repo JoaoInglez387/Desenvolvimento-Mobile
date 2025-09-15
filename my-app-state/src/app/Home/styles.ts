@@ -5,10 +5,10 @@ export const styles = StyleSheet.create({
         display: "flex",
         flexDirection: "column",
         flex: 1,
-        backgroundColor: '#FFFFFF',
+        backgroundColor: '#ffffff',
         marginLeft: 10,
         marginRight: 10,
-        marginBottom:10
+        marginBottom:+10
     },
 
     caberacio_container: {
@@ -37,8 +37,8 @@ export const styles = StyleSheet.create({
         display: "flex",
         flex: 1,
         alignItems: "center",
-        backgroundColor: "#FFEDD4",
-        borderColor: "#442D22",
+        backgroundColor: "white",
+        borderColor: "black",
         borderWidth: 2,
         borderRadius: 20,
         gap: 12,
@@ -54,33 +54,37 @@ export const styles = StyleSheet.create({
         textAlign: "left",
         fontSize: 28,
         fontWeight: "bold",
-        color: "#442d22",
+        color: "black",
         paddingBottom: 20,
+    },
+
+    text_legend: {
+        fontSize: 17,
+        textAlign: 'left',
+        color: "#159A9C",
+        paddingBottom: 10,
     },
 
     input: {
         flex: 1,
         textAlign: 'left',
-        fontWeight: "500",
-        color: "#442D22",
-        backgroundColor: "#FFEDD4",
-        padding: 15,
-        borderWidth: 3,
+        color: "#002333",
+        backgroundColor: "black",
+        padding: 10,
+        borderWidth: 8,
         borderRadius: 8,
-        borderColor: "#6B4637",
     },
 
     button: {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#FF7A00",
+        backgroundColor: "black",
         color: "white",
         borderRadius: 8,
         width: 55,
         height: 55, 
         borderWidth: 8,
-        borderColor: "#FF7A00",
     },
 
 });

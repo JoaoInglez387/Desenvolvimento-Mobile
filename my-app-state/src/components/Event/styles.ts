@@ -7,9 +7,8 @@ export const styles = StyleSheet.create({
         alignItems: "center",
         flexDirection: "row",
         borderBottomWidth: 2,
-        borderBottomColor: "#FFC273",
+        borderBottomColor: "black",
         paddingTop: 10,
-        paddingBottom: 5,
         gap: 10,
     },
 
@@ -20,7 +19,7 @@ export const styles = StyleSheet.create({
         textAlign: "left",
         fontSize: 16,
         fontWeight: "bold",
-        color: "#442D22",
+        color: "black",
     },
 
 })

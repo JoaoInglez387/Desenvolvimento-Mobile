@@ -3,6 +3,7 @@ import { styles } from './styles';
 import { Event } from '../../components/Event';
 import { Button, Text, TextInput, Touchable, TouchableOpacity, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { useState } from 'react';
 
 export default function App() {
     return (
@@ -12,7 +13,7 @@ export default function App() {
             </View>
             <View style={styles.contener_person}>
                 <View style={styles.contener_input}>
-                    <TextInput style={styles.input} placeholder='Digite algo' placeholderTextColor={"grey"}/>
+                    <TextInput style={styles.input} placeholder='Digite algo' placeholderTextColor={"#8f8885"}/>
                     <TouchableOpacity style={styles.button} activeOpacity={0.5}>
                         <Ionicons name="add-circle-outline" size={28} color="white" />
                     </TouchableOpacity>
