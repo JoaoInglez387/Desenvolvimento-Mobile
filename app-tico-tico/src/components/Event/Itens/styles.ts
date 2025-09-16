@@ -3,8 +3,8 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
     contener: {
         display: 'flex',
-        justifyContent: "center",
-        alignItems: "center",
+        flex: 1,
+        alignItems: "flex-start",
         flexDirection: "row",
         borderBottomWidth: 2,
         borderBottomColor: "#FFC273",
@@ -13,10 +13,8 @@ export const styles = StyleSheet.create({
         gap: 10,
     },
 
-    textEvent: {
+    textItem: {
         display: "flex",
-        alignItems: "center",
-        flex: 1,
         textAlign: "left",
         fontSize: 16,
         fontWeight: "bold",

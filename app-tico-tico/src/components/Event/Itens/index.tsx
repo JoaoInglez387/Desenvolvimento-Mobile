@@ -1,17 +1,16 @@
 import { styles } from "./styles";
 import AntDesign from '@expo/vector-icons/AntDesign';
-import {Text, TextInput, TouchableOpacity, View } from 'react-native';
+import {Text, View } from 'react-native';
 
 type Props = {
     name:string,
-    onClick?: () => void
 }
 
-export function Event({name}:Props) {
+export function Itens({name}:Props) {
     return (
         <View style={styles.contener}>
             <AntDesign name="checkcircle" size={24} color="#FF7A00" />
-            <Text style={styles.textEvent}>{name}</Text>
+            <Text style={styles.textItem}>{name}</Text>
         </View>
     );
 }

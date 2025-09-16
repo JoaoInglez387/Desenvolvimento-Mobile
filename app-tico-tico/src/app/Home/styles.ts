@@ -36,18 +36,13 @@ export const styles = StyleSheet.create({
     contener_resultado: {
         display: "flex",
         flex: 1,
-        alignItems: "center",
+        alignItems: "flex-start",
         backgroundColor: "#FFEDD4",
         borderColor: "#442D22",
         borderWidth: 2,
         borderRadius: 20,
         gap: 12,
         padding: 10,
-    },
-
-    contener_salve: {
-        display: "flex",
-        width: "60%"
     },
 
     text_titul: {
