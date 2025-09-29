@@ -14,14 +14,14 @@ export const styles = StyleSheet.create({
         flex: 1,
         marginLeft: 10,
         marginRight: 10,
-        marginBottom:10
+        marginBottom:30
     },
 
     caberacio_container: {
         display: "flex",
         alignItems: 'flex-start',
-        paddingTop: 50,
-        paddingBottom: 20,
+        paddingTop: 30,
+        paddingBottom: 15,
     },
 
     contener_person: {

@@ -8,10 +8,9 @@ export default function Header() {
     <View style={styles.container}>
       <View style={styles.header}>
         <Image
-        source={require('../../../assets/Tico-Tico Logo.svg')} // coloque a extensão correta
+        source={require('../../../assets/Tico-Tico Logo.png')}
         style={styles.logo}
-        accessibilityLabel="Logo do Tico-Tico" // substitui o alt
-      />
+        accessibilityLabel="Logo do Tico-Tico"/>
       </View>
     </View>
     )
