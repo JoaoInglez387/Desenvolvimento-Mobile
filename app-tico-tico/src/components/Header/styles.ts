@@ -5,10 +5,16 @@ export const styles = StyleSheet.create({
       backgroundColor: "#FFFFFF",
     },
     header: {
-      backgroundColor: "#FF7A00",
+      backgroundColor: "#FFA200",
       paddingTop: 50,
       paddingBottom: 16,
       paddingHorizontal: 16,
       elevation: 3,
+    },
+
+    logo: { 
+      width: 50, 
+      height: 50, 
+      resizeMode: 'contain' 
     },
 });

@@ -10,7 +10,6 @@ export default function App() {
     const [list, setList] = useState<string[]>([]);
     const [listName, setListName] = useState('');
 
-  
 
     function handleAdd() {
         setList(prevState => [...prevState, listName])
@@ -18,27 +17,34 @@ export default function App() {
         setListName("")
     }
 
+    function handRemove(name: string) {
+        return setList(prevState => prevState.filter(item => item !== name))
+    }
+    
     return (
         <View style={styles.container}>
             <Header/>
-            <View style={styles.caberacio_container}>
-                <Text style={styles.text_titul}>Lista de Compra</Text>
-            </View>
-            <View style={styles.contener_person}>
-                <View style={styles.contener_input}>
-                    <Input placeH='Digite algo' onChangeText={e => setListName(e)} onPress={handleAdd} value={listName}/>
+            <View style={styles.main}>
+                <View style={styles.caberacio_container}>
+                    <Text style={styles.text_titul}>Lista de Compra</Text>
                 </View>
-                <View style={styles.contener_resultado}>
-                    <ScrollView>
-                        {
-                            list.map(item => (
-                                <Itens
-                                key={item}
-                                name={item} 
-                                />
-                            ))
-                        }
-                    </ScrollView>
+                <View style={styles.contener_person}>
+                    <View style={styles.contener_input}>
+                        <Input placeH='Digite algo' onChangeText={e => setListName(e)} onPress={handleAdd} value={listName}/>
+                    </View>
+                    <View style={styles.contener_resultado}>
+                        <ScrollView>
+                            {
+                                list.map(item => (
+                                    <Itens
+                                    key={item}
+                                    name={item}
+                                    onPress = {() => handRemove(item)} 
+                                    />
+                                ))
+                            }
+                        </ScrollView>
+                    </View>
                 </View>
             </View>
             <StatusBar style="auto" />
