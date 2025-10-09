@@ -9,7 +9,7 @@ type Props = TextInputProps& {
 export default function Input({placeH, onChangeText, onPress, value}:Props) {
     return (
         <View style={styles.contener_input}>
-            <TextInput style={styles.input} placeholder={placeH} placeholderTextColor={"#8f8885"} onChangeText={onChangeText} value={value}/>
+            <TextInput style={styles.input} placeholder={placeH} placeholderTextColor={"#b6b8c0"} onChangeText={onChangeText} value={value}/>
         </View>
     );
 }

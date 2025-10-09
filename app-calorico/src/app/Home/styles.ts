@@ -5,21 +5,19 @@ export const styles = StyleSheet.create({
         display: "flex",
         flexDirection: "column",
         flex: 1,
-        backgroundColor: '#FFFFFF',
+        backgroundColor: '#e6e6e6cb',
     },
 
     main: {
         display: "flex",
         flexDirection: "column",
         flex: 1,
-        marginLeft: 10,
-        marginRight: 10,
-        marginBottom:30
+        marginBottom: 30,
     },
 
     caberacio_container: {
         display: "flex",
-        alignItems: 'flex-start',
+        alignItems: 'center',
         paddingTop: 30,
         paddingBottom: 15,
     },
@@ -27,6 +25,7 @@ export const styles = StyleSheet.create({
     contener_person: {
         display: 'flex',
         flex: 1,
+        alignItems: "center",
         justifyContent: 'center',
         width: "100%",
     },
@@ -35,53 +34,103 @@ export const styles = StyleSheet.create({
         display: 'flex',
         alignItems: "center",
         flexDirection: "column",
-        gap: 8,
-        marginBottom: 15,
+        marginBottom: 20,
+        width: "85%",
+    },
+
+    contener_list: {
+        display: "flex",
+        flex: 1,
+        alignItems: "center",
+        backgroundColor: "#ffffffff",
+        boxShadow: "0 1px 3px #C2C4CC",
+        borderColor: "#797A80",
+        borderTopStartRadius: 20,
+        borderTopEndRadius: 20,
+        gap: 12,
+        padding: 10,
+        paddingLeft: 20,
+        paddingRight: 20,
+        paddingTop: 20,
+        marginBottom: 10,
     },
 
     contener_resultado: {
         display: "flex",
-        flex: 1,
-        alignItems: "flex-start",
-        backgroundColor: "#FFEDD4",
-        borderColor: "#442D22",
-        borderWidth: 2,
-        borderRadius: 20,
-        gap: 12,
-        padding: 10,
+        alignItems: "center",
+        backgroundColor: "#ffffffff",
+        boxShadow: "0 1px 3px #C2C4CC",
+        borderColor: "#797A80",
+        borderRadius: 10,
+        padding: 15,
+        marginLeft: "auto",
+        marginRight: 10,
+    },
+
+    legenda_tablet: {
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        width: "100%",
+        gap: 15,
+        borderBottomWidth: 1,
+        borderBottomColor: "#E0E0E0",
+        paddingBottom: 7,
+        marginBottom: 5,
     },
 
     text_titul: {
-        textAlign: "left",
-        fontSize: 28,
+        textAlign: "center",
+        fontSize: 29,
         fontWeight: "bold",
-        color: "#442d22",
-        paddingBottom: 20,
+        color: "#352DA6",
+        paddingBottom: 15,
     },
 
-    input: {
-        flex: 1,
-        textAlign: 'left',
-        fontWeight: "500",
-        color: "#442D22",
-        backgroundColor: "#FFEDD4",
-        padding: 15,
-        borderWidth: 3,
-        borderRadius: 8,
-        borderColor: "#6B4637",
+    item_leg: {
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 10,
     },
 
-    button: {
+    item: {
+        fontSize: 16,
+        fontWeight: "700",
+        color: "#2D4BA6",
+    },
+
+    caloria_leg: {
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 10,
+    },
+
+    caloria: {
+        fontSize: 16,
+        fontWeight: "700",
+        color: "#2D97A6",
+    },
+
+    buttonDelet: {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#FF7A00",
-        color: "white",
-        borderRadius: 8,
-        width: 55,
-        height: 55, 
-        borderWidth: 8,
-        borderColor: "#FF7A00",
+        marginLeft: "auto",
+    },
+
+    textButton: {
+        fontSize: 16,
+        fontWeight: "700",
+        color: "#A6452D",
+    },
+
+    text_total: {
+        textAlign: "center",
+        fontSize: 17,
+        fontWeight: "700",
+        color: "#232326",
     },
 
 });

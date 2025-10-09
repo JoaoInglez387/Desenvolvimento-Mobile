@@ -4,10 +4,11 @@ import { Button, Text, TextInput, Touchable, TouchableOpacity, View } from 'reac
 import { Image, StyleSheet } from 'react-native';
 
 export default function Header() {
-  return (
-    <View style={styles.container}>
-      <View style={styles.header}>
-      </View>
-    </View>
+    return (
+        <View style={styles.container}>
+            <View style={styles.header}>
+                <Text style={styles.textLogo}>LOGO</Text>
+            </View>
+        </View>
     )
 }

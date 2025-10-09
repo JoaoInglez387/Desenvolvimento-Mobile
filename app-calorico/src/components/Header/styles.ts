@@ -1,23 +1,22 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-  container: {
-    backgroundColor: "#FFFFFF",
-  },
-  header: {
-    backgroundColor: "#FFA200",
-    display: "flex",
-    height: 90,
-    paddingTop: 10,
-    paddingHorizontal: 16,
-    elevation: 2,
-    justifyContent: "center",
-    alignItems: "center",
-  },
+    container: {
+        backgroundColor: "#2D4BA6",
+    },
 
-  logo: {
-    width: 180,
-    height: 180,
-    resizeMode: 'contain'
-  },
+    header: {
+        backgroundColor: "#2D4BA6",
+        display: "flex",
+        height: 80,
+        paddingTop: 15,
+        justifyContent: "center",
+        alignItems: "center",
+    },
+
+    textLogo: {
+        color: "#FFFFFF",
+        fontSize: 30,
+        fontWeight: "700",
+    }
 });
