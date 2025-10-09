@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
         flexDirection: "row",
         borderBottomWidth: 1,
         borderBottomColor: "#E0E0E0",
-        paddingTop: 3,
+        paddingTop: 10,
         paddingBottom: 10,
         gap: 10,
     },
