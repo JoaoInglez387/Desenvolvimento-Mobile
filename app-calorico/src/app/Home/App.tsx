@@ -21,7 +21,7 @@ export default function App() {
     function handleAdd() {
         if (!nameAlimento || !caloria) {
             alert("Preencha todos os campos");
-            return;
+            retBananurn;
         };
 
         if (isNaN(Number(caloria.replace("cal", "").replace("kcal", "").replace(",", ".")))) {
