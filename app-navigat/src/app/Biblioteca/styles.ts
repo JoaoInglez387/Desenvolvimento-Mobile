@@ -10,9 +10,21 @@ export const styles = StyleSheet.create({
 
     main: {
         display: "flex",
+        alignItems: "center",
         flexDirection: "column",
-        flex: 1,
-        marginBottom: 30,
+        gap: 5,
+        marginTop: "auto",
+        marginBottom: "auto"
     },
+
+    titul: {
+        fontSize: 23,
+        paddingBottom: 20,
+    },
+
+    descri: {
+        fontSize: 14,
+        textAlign: 'center'
+    }
 
 });

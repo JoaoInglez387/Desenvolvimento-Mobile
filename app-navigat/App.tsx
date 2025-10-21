@@ -1,9 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
-import { styles } from './styles';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Feather } '@expo/vector-icons';
+import { Feather } from '@expo/vector-icons';
 
 import TelaHome from './src/app/Home';
 import TelaDescricao from './src/app/Telas';

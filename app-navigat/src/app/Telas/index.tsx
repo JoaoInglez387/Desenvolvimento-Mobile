@@ -10,7 +10,8 @@ export default function TelaDescricao() {
         <View style={styles.container}>
             <Header />
             <View style={styles.main}>
-                <Text>TEste</Text>
+                <Text style={styles.titul}>Nome das Telas</Text>
+                <Text style={styles.descri}>Perceba que cada aba representa uma tela do aplicativo.</Text>
             </View>
             <StatusBar style="auto" />
         </View>

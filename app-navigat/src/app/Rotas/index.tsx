@@ -10,7 +10,8 @@ export default function TelaRotas() {
         <View style={styles.container}>
             <Header />
             <View style={styles.main}>
-                <Text>TEste</Text>
+                <Text style={styles.titul}>Rotas de navegação</Text>
+                <Text style={styles.descri}>Toque nas abas abaixo para navegar entre as telas</Text>
             </View>
             <StatusBar style="auto" />
         </View>

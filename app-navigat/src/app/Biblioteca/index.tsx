@@ -10,7 +10,10 @@ export default function TelaBiblioteca() {
         <View style={styles.container}>
             <Header />
             <View style={styles.main}>
-                <Text>TEste</Text>
+                <Text style={styles.titul}>Qual biblioteca usamos?</Text>
+                <Text style={styles.descri}>Das bibliotecas que utilizamos podemos destacar duas:</Text>
+                <Text style={styles.descri}>@react-navigation/native e</Text>
+                <Text style={styles.descri}>@react-navigation/bottom-tabs</Text>
             </View>
             <StatusBar style="auto" />
         </View>

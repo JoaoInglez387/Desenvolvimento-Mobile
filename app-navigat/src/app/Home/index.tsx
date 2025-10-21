@@ -10,7 +10,8 @@ export default function TelaHome() {
         <View style={styles.container}>
             <Header />
             <View style={styles.main}>
-                <Text>TEste</Text>
+                <Text style={styles.titul}>Como navegar?</Text>
+                <Text style={styles.descri}>Toque nas abas abaixo para navegar entre as telas</Text>
             </View>
             <StatusBar style="auto" />
         </View>
