@@ -12,17 +12,19 @@ export const styles = StyleSheet.create({
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
-        gap: 25,
+        gap: 10,
         marginTop: "auto",
         marginBottom: "auto"
     },
 
     titul: {
-        fontSize: 23,
+        fontSize: 24,
+        paddingBottom: 20,
     },
 
     descri: {
         fontSize: 14,
+        textAlign: 'center'
     }
 
 });

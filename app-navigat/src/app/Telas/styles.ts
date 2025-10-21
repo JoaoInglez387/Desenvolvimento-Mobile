@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
     },
 
     titul: {
-        fontSize: 23,
+        fontSize: 24,
     },
 
     descri: {
