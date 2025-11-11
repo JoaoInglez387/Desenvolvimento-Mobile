@@ -19,11 +19,13 @@ export const styles = StyleSheet.create({
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
-        flex: 1,
-        backgroundColor: '#e07d7dff',
-        paddingLeft: 25,
-        paddingRight: 25,
         gap: 20,
+        paddingBottom: 30,
+    },
+
+    scroll_container: {
+        width: '100%',
+        flexGrow: 1,
     },
 
     text: {

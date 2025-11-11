@@ -3,30 +3,34 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
     contener_cards: {
         display: 'flex',
-        flex: 1,
         alignItems: "center",
         flexDirection: "row",
-        backgroundColor: '#7c3c3cff',
-        padding: 12,
+        backgroundColor: '#AB887C',
+        borderRadius: 12,
     },
 
-    img_cards: {
-        display: "flex",
+    card: {
+        padding: 10,
+        flexDirection: "row",
+        width: '100%',
     },
 
     img: {
-        width: 80,
-        height: 100,
-        objectFit: 'contain',
+        width: 60,
+        height: 140,
+        resizeMode: 'contain',
+        marginLeft: 5,
     },
 
     text_cards: {
         display: "flex",
-        flex: 1,
         flexDirection: "column",
         justifyContent: "flex-start",
         alignItems: "flex-start",
-        gap: 12,
+        gap: 8,
+        marginLeft: 5,
+        paddingBottom: 5,
+        flex: 1,
     },
 
     titul: {
@@ -37,7 +41,8 @@ export const styles = StyleSheet.create({
     },
 
     descri: {
-        fontSize: 15,
+        fontSize: 14,
+        lineHeight: 22,
         textAlign: "left",
         color: '#ffffffff',
     }

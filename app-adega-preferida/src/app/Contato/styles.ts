@@ -18,12 +18,21 @@ export const styles = StyleSheet.create({
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
-        color: '#272727ff',
     },
 
     titul: {
         fontSize: 24,
-        paddingBottom: 20,
+        fontWeight: 'bold',
+        color: '#272727ff',
+        paddingBottom: 10,
     },
+
+    descri: {
+        fontSize: 14,
+        lineHeight: 22,
+        textAlign: "left",
+        color: '#ffffffff',
+    }
+
 
 });
