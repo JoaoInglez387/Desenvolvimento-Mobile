@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "vinhoApp",
-    "slug": "vinhoApp",
+    "name": "app-gestexp",
+    "slug": "app-gestexp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
