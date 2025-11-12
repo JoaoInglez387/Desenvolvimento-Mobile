@@ -3,9 +3,10 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
     container: {
         display: "flex",
-        flexDirection: "column",
         flex: 1,
-        backgroundColor: '#e6e6e6cb',
+        flexDirection: "column",
+        backgroundColor: '#ffffff',
+        padding: 15,
     },
 
     main: {
@@ -14,25 +15,27 @@ export const styles = StyleSheet.create({
         flexDirection: "column",
     },
 
+    contener_contat: {
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+        gap: 10,
+        paddingBottom: 30,
+    },
+
     text: {
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
+        paddingBottom: 20,
     },
 
     titul: {
-        fontSize: 24,
+        fontSize: 28,
         fontWeight: 'bold',
-        color: '#272727ff',
+        textAlign: "left",
+        color: '#000000',
         paddingBottom: 10,
     },
-
-    descri: {
-        fontSize: 14,
-        lineHeight: 22,
-        textAlign: "left",
-        color: '#ffffffff',
-    }
-
-
+ 
 });

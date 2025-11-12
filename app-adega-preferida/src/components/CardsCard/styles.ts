@@ -25,7 +25,7 @@ export const styles = StyleSheet.create({
     text_cards: {
         display: "flex",
         flexDirection: "column",
-        justifyContent: "flex-start",
+        justifyContent: "center",
         alignItems: "flex-start",
         gap: 8,
         marginLeft: 5,
@@ -34,10 +34,10 @@ export const styles = StyleSheet.create({
     },
 
     titul: {
-        fontSize: 24,
+        fontSize: 22,
         fontWeight: 'bold',
         color: '#ffffffff',
-        paddingBottom: 10,
+        paddingBottom: 12,
     },
 
     descri: {

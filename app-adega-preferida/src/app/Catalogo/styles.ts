@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
         alignItems: "center",
         flexDirection: "column",
         gap: 20,
-        paddingBottom: 30,
+        paddingBottom: 15,
     },
 
     scroll_container: {
@@ -33,7 +33,6 @@ export const styles = StyleSheet.create({
         alignItems: "flex-start",
         flexDirection: "column",
         gap: 15,
-        marginTop: 15,
         marginBottom: 15,
     },
 
@@ -44,10 +43,10 @@ export const styles = StyleSheet.create({
     },
 
     descri: {
-        fontSize: 19,
+        fontSize: 18,
+        lineHeight: 22,
         textAlign: "left",
         color: '#383838ff',
     }
-
 
 });

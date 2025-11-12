@@ -5,12 +5,16 @@ export const styles = StyleSheet.create({
         display: 'flex',
         alignItems: "center",
         flexDirection: "column",
-        marginBottom: 5,
     },
 
-    img_cards: {
+    cards: {
         display: "flex",
         alignItems: "center",
+        width: 250,
+        padding: 22,
+        borderWidth: 1,
+        borderRadius: 8,
+        borderColor: '#e0e0e0ff',
     },
 
     text_cards: {
@@ -18,16 +22,19 @@ export const styles = StyleSheet.create({
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        marginBottom: 10,
-        color: '#ffffffff',
     },
 
     titul: {
-        fontSize: 24,
+        fontSize: 22,
+        fontWeight: 'bold',
+        color: '#400303',
+        paddingBottom: 2,
     },
 
     descri: {
-        fontSize: 14,
+        fontSize: 15,
+        fontWeight: 400,
+        color: '#400303',
     }
 
 });
