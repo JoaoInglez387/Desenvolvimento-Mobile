@@ -19,22 +19,10 @@ export const styles = StyleSheet.create({
         padding: 10,
     },
 
-    img: {
-        width: 500,
-        height: 200,
-        resizeMode: 'contain',
-    },
-
     titul: {
         fontSize: Themes.fonts.size.title,
         fontWeight: 'bold',
         paddingBottom: 15,
-    },
-
-    subtitul: {
-        fontSize: Themes.fonts.size.subtitul,
-        fontWeight: '600',
-        paddingBottom: 5,
     },
 
     descri: {

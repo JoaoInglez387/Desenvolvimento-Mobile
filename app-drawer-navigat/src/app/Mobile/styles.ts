@@ -25,6 +25,13 @@ export const styles = StyleSheet.create({
         resizeMode: 'contain',
     },
 
+    contenerText: {
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+        gap: 10,
+    },
+
     titul: {
         fontSize: Themes.fonts.size.title,
         fontWeight: 'bold',
@@ -40,7 +47,7 @@ export const styles = StyleSheet.create({
     descri: {
         fontSize: Themes.fonts.size.text,
         lineHeight: 20,
-        textAlign: 'center'
+        textAlign: 'justify'
     }
 
 });
