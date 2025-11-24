@@ -35,13 +35,13 @@ export const styles = StyleSheet.create({
         fontSize: 38,
         textAlign: "center",
         fontWeight: 'bold',
-        color: '#ffffffff',
+        color: '#000000',
     },
 
     descri: {
         fontSize: 18,
         textAlign: "center",
-        color: '#ffffffff',
+        color: '#000000',
     }
 
 });
