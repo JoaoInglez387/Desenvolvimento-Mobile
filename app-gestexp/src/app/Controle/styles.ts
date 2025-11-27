@@ -20,6 +20,7 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
         flexDirection: "row",
+        paddingTop: 20,
         padding: 30,
         paddingBottom: 15,
     },
@@ -53,6 +54,26 @@ export const styles = StyleSheet.create({
         width: "100%",
     },
 
+    drowpData: {
+        display: "flex",
+        justifyContent: "center",
+        backgroundColor: "#ffffffff",
+        borderColor: "#ffffffff",
+        boxShadow: "0 1px 3px #C2C4CC",
+        paddingLeft: 10,
+        marginBottom: 10,
+        borderRadius: 8,
+        width: "100%",
+        height: 45,
+    },
+
+    drowpDataText: {
+        textAlign: 'left',
+        fontWeight: "400",
+        fontSize: 14,
+        color: "#232326",
+    },
+
     contener_list: {
         display: "flex",
         flex: 1,
@@ -67,7 +88,7 @@ export const styles = StyleSheet.create({
         paddingLeft: 15,
         paddingRight: 15,
         paddingTop: 20,
-        marginBottom: 10,
+        marginBottom: 5,
     },
 
     legenda_tablet: {

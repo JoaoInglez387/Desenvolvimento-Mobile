@@ -8,7 +8,7 @@ const Stack = createStackNavigator<RotaStackNaveg>();
 import TelaInicio from './src/app/Inicio';
 import TelaControle from './src/app/Controle';
 import TelaCalculadora from './src/app/Calculadora';
-import TelaConta from './src/app/Conta';
+import TelaRelatorio from './src/app/Relatorio';
 
 type RotaStackNaveg = {
     Inicial: undefined;
@@ -25,7 +25,7 @@ export default function App() {
                     <Stack.Screen name="Inicial" component={TelaInicio} options={{ title: 'Início' }} />
                     <Stack.Screen name="Controle de Caixa" component={TelaControle} options={{ title: 'Controle de Caixa' }} />
                     <Stack.Screen name="Calculadora de Preço" component={TelaCalculadora} options={{ title: 'Calculadora de Preço' }} />
-                    <Stack.Screen name="Relatório" component={TelaConta} options={{ title: 'Relatórios' }} />
+                    <Stack.Screen name="Relatório" component={TelaRelatorio} options={{ title: 'Relatórios' }} />
                 </Stack.Navigator>
             </NavigationContainer>
         </FinanceProvider>

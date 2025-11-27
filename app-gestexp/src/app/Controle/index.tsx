@@ -82,9 +82,9 @@ export default function TelaControle() {
                             placeholder="Selecione uma opção"
                         />
                         <Input placeH='Digite a descrição' onChangeText={e => setDescricao(e)} value={descricao} />
-                        <Input placeH='Digite o valor' onChangeText={e => setValor(e)} value={valor} />
-                        <TouchableOpacity onPress={() => setMostrarPicker(true)} style={styles.drowp}>
-                            <Text> {dataSelecionada ? `Data: ${dataSelecionada.toLocaleDateString()}` : "Selecionar data"}</Text>
+                        <Input placeH='Digite o valor' onChangeText={e => setValor(e)} value={valor} numeric={true}/>
+                        <TouchableOpacity onPress={() => setMostrarPicker(true)} style={styles.drowpData}>
+                            <Text style={styles.drowpDataText}> {dataSelecionada ? `Data: ${dataSelecionada.toLocaleDateString()}` : "Selecionar data"}</Text>
                         </TouchableOpacity>
 
                         {mostrarPicker && (

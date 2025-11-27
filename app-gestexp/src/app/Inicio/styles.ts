@@ -15,8 +15,11 @@ export const styles = StyleSheet.create({
 
     headerContener: {
         display: "flex",
-        alignItems: "center",
+        alignItems: "flex-start",
         flexDirection: "column",
+        backgroundColor: "#25679cff",
+        paddingTop: 20,
+        paddingBottom: 20,
         paddingRight: 20,
         paddingLeft: 20,
         gap: 15,
@@ -26,22 +29,24 @@ export const styles = StyleSheet.create({
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
+        width: "100%",
         padding: 10
     },
 
     resumoContener: {
         display: "flex",
         alignItems: 'center',
-        justifyContent: 'space-between',
+        width: "100%",
+        justifyContent: 'center',
         flexDirection: "row",
         padding: 30,
         paddingBottom: 15,
+        gap: 25
     },
 
     calendarioView: {
         display: "flex",
         alignItems: "center",
-        flexDirection: "row", 
         padding: 10
     },
 
@@ -49,6 +54,8 @@ export const styles = StyleSheet.create({
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
+        gap: 20,
+        width: "100%",
         marginTop: 15,
         marginBottom: 15,
     },
@@ -60,20 +67,30 @@ export const styles = StyleSheet.create({
         color: '#000000',
     },
 
+    subtitul: {
+        fontSize: 25,
+        textAlign: "center",
+        fontWeight: 'bold',
+        color: '#000000',
+        paddingTop: 15
+    },
+
     descri: {
         fontSize: 18,
-        textAlign: "center",
+        textAlign: "left",
         color: '#000000',
     },
 
     button: {
         display: "flex",
+        flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
         borderRadius: 10,
         width: "100%",
         height: 50,
-        padding: 10
+        padding: 10,
+        gap: 10
     },
 
     buttonText: {

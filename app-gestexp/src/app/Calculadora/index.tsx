@@ -92,10 +92,10 @@ export default function TelaCalculadora() {
             <View style={styles.main}>
                 <View style={styles.contener_person}>
                     <View style={styles.contener_input}>
-                        <Input placeH='Digite o valor do produto' onChangeText={e => setProduto(e)} value={produto} />
-                        <Input placeH='Digite o valor do imposto (opcional) (% ou R$)' onChangeText={e => setImposto(e)} value={imposto} />
-                        <Input placeH='Digite o valor de frente (opcional)' onChangeText={e => setFrete(e)} value={frete} />
-                        <Input placeH='Digite o valor que deseja receber (% ou R$)' onChangeText={e => setLucro(e)} value={lucro} />
+                        <Input placeH='Digite o valor do produto' onChangeText={e => setProduto(e)} value={produto} numeric={true}/>
+                        <Input placeH='Digite o valor do imposto (opcional) (% ou R$)' onChangeText={e => setImposto(e)} value={imposto}/>
+                        <Input placeH='Digite o valor de frente (opcional)' onChangeText={e => setFrete(e)} value={frete} numeric={true}/>
+                        <Input placeH='Digite o valor que deseja receber (% ou R$)' onChangeText={e => setLucro(e)} value={lucro}/>
                         <ButtonAdd title='Calcular' onPress={Calculadora} />
                     </View>
                     <View style={styles.contener_resultado}>
