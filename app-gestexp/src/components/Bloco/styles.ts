@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { Themes } from '../../../theme/themes';
 
 export const styles = StyleSheet.create({
     contener_box: {
@@ -10,17 +11,17 @@ export const styles = StyleSheet.create({
 
     titul: {
         fontWeight: "800",
-        fontSize: 17,
-        color: "#232326",
+        fontSize: Themes.fonts.size.destc,
+        color: Themes.colors.cinze,
         marginBottom: 10,
     },
 
     box: {
         textAlign: 'center',
         fontWeight: "700",
-        fontSize: 16,
-        color: "#232326",
-        backgroundColor: "#ffffffff",
+        fontSize: Themes.fonts.size.descri,
+        color: Themes.colors.cinze,
+        backgroundColor: Themes.colors.siste,
         boxShadow: "0 1px 3px #C2C4CC",
         padding: 15,
         borderRadius: 5,

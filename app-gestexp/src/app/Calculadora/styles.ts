@@ -1,11 +1,12 @@
 import { StyleSheet } from 'react-native';
+import { Themes } from '../../../theme/themes';
 
 export const styles = StyleSheet.create({
     container: {
         display: "flex",
         flexDirection: "column",
         flex: 1,
-        backgroundColor: '#e6e6e6cb',
+        backgroundColor: Themes.colors.white_smoke,
     },
 
     main: {
@@ -38,34 +39,34 @@ export const styles = StyleSheet.create({
         display: "flex",
         width: "90%",
         alignItems: "center",
-        backgroundColor: "#ffffffff",
+        backgroundColor: Themes.colors.siste,
         boxShadow: "0 1px 3px #C2C4CC",
-        borderColor: "#797A80",
+        borderColor: Themes.colors.border,
         borderRadius: 10,
         padding: 15,
     },
 
     text_titul: {
         textAlign: "center",
-        fontSize: 25,
+        fontSize: Themes.fonts.size.title_2,
         fontWeight: "bold",
-        color: "#352DA6",
+        color: Themes.colors.roxo,
         paddingBottom: 5,
     },
 
     text_descri: {
         textAlign: "center",
-        fontSize: 17,
+        fontSize: Themes.fonts.size.destc,
         fontWeight: 700,
-        color: "#2da69cff",
+        color: Themes.colors.ciano,
         paddingBottom: 5,
     },
 
     valor: {
         textAlign: "center",
-        fontSize: 25,
+        fontSize: Themes.fonts.size.title_2,
         fontWeight: "bold",
-        color: "#000000ff",
+        color: Themes.colors.dark,
         paddingBottom: 10,
     }
 

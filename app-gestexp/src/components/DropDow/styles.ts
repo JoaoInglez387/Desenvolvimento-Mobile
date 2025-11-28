@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { Themes } from '../../../theme/themes';
 
 export const styles = StyleSheet.create({
     contener_input: {
@@ -11,9 +12,9 @@ export const styles = StyleSheet.create({
     input: {
         textAlign: 'left',
         fontWeight: "500",
-        fontSize: 15,
-        color: "#232326",
-        backgroundColor: "#ffffffff",
+        fontSize: Themes.fonts.size.text,
+        color: Themes.colors.cinze,
+        backgroundColor: Themes.colors.siste,
         boxShadow: "0 1px 3px #C2C4CC",
         paddingLeft: 10,
         borderRadius: 8,

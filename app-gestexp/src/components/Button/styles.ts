@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { Themes } from '../../../theme/themes';
 
 export const styles = StyleSheet.create({
     contener_input: {
@@ -12,7 +13,7 @@ export const styles = StyleSheet.create({
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#2D4BA6",
+        backgroundColor: Themes.colors.button_color,
         borderRadius: 10,
         width: "100%",
         height: 45,
@@ -21,7 +22,7 @@ export const styles = StyleSheet.create({
     textButton: {
         color: "white",
         fontWeight: 600,
-        fontSize: 17,
+        fontSize: Themes.fonts.size.destc,
     }
     
 });

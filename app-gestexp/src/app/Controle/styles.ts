@@ -1,11 +1,12 @@
 import { StyleSheet } from 'react-native';
+import { Themes } from '../../../theme/themes';
 
 export const styles = StyleSheet.create({
     container: {
         display: "flex",
         flexDirection: "column",
         flex: 1,
-        backgroundColor: '#e6e6e6cb',
+        backgroundColor: Themes.colors.white_smoke,
     },
 
     main: {
@@ -20,17 +21,17 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
         flexDirection: "row",
-        paddingTop: 20,
+        paddingTop: 30,
         padding: 30,
         paddingBottom: 15,
     },
 
     contener_person: {
         display: 'flex',
-        flex: 1,
         alignItems: "center",
         justifyContent: 'center',
         width: "100%",
+        height: "100%"
     },
 
     contener_input: {
@@ -44,10 +45,10 @@ export const styles = StyleSheet.create({
     drowp: {
         textAlign: 'left',
         fontWeight: "500",
-        fontSize: 15,
-        color: "#232326",
-        backgroundColor: "#ffffffff",
-        borderColor: "#ffffffff",
+        fontSize: Themes.fonts.size.text,
+        color: Themes.colors.cinze,
+        backgroundColor: Themes.colors.siste,
+        borderColor: Themes.colors.siste,
         boxShadow: "0 1px 3px #C2C4CC",
         marginBottom: 10,
         borderRadius: 8,
@@ -57,10 +58,10 @@ export const styles = StyleSheet.create({
     drowpData: {
         display: "flex",
         justifyContent: "center",
-        backgroundColor: "#ffffffff",
-        borderColor: "#ffffffff",
+        backgroundColor: Themes.colors.siste,
+        borderColor: Themes.colors.siste,
         boxShadow: "0 1px 3px #C2C4CC",
-        paddingLeft: 10,
+        paddingLeft: 9,
         marginBottom: 10,
         borderRadius: 8,
         width: "100%",
@@ -70,17 +71,18 @@ export const styles = StyleSheet.create({
     drowpDataText: {
         textAlign: 'left',
         fontWeight: "400",
-        fontSize: 14,
-        color: "#232326",
+        fontSize: Themes.fonts.size.text,
+        color: Themes.colors.cinze,
     },
 
     contener_list: {
         display: "flex",
         flex: 1,
+        height: 110,
         alignItems: "center",
-        backgroundColor: "#ffffffff",
+        backgroundColor: Themes.colors.siste,
         boxShadow: "0 1px 3px #C2C4CC",
-        borderColor: "#797A80",
+        borderColor: Themes.colors.border,
         borderTopStartRadius: 20,
         borderTopEndRadius: 20,
         gap: 12,
@@ -99,16 +101,16 @@ export const styles = StyleSheet.create({
         width: "100%",
         gap: 15,
         borderBottomWidth: 1,
-        borderBottomColor: "#E0E0E0",
+        borderBottomColor: Themes.colors.white_cinze,
         paddingBottom: 7,
         marginBottom: 5,
     },
 
     text_titul: {
         textAlign: "center",
-        fontSize: 29,
+        fontSize: Themes.fonts.size.title_1,
         fontWeight: "bold",
-        color: "#352DA6",
+        color: Themes.colors.roxo,
         paddingBottom: 15,
     },
 
@@ -120,21 +122,21 @@ export const styles = StyleSheet.create({
     },
 
     data: {
-        fontSize: 16,
+        fontSize: Themes.fonts.size.descri,
         fontWeight: "700",
-        color: "#2D4BA6",
+        color: Themes.colors.button_color,
     },
 
     tipo: {
-        fontSize: 16,
+        fontSize: Themes.fonts.size.descri,
         fontWeight: "700",
-        color: "#2D97A6",
+        color: Themes.colors.ciano,
     },
 
     descri: {
-        fontSize: 16,
+        fontSize: Themes.fonts.size.descri,
         fontWeight: "700",
-        color: "#2D97A6",
+        color: Themes.colors.blue_aqua,
     },
 
     buttonDelet: {
@@ -143,10 +145,16 @@ export const styles = StyleSheet.create({
         alignItems: "center",
     },
 
-    textButton: {
-        fontSize: 16,
+    valor: {
+        fontSize: Themes.fonts.size.descri,
         fontWeight: "700",
-        color: "#A6452D",
+        color: Themes.colors.blue,
+    },
+
+    textButton: {
+        fontSize: Themes.fonts.size.descri,
+        fontWeight: "700",
+        color: Themes.colors.red,
     },
 
 });

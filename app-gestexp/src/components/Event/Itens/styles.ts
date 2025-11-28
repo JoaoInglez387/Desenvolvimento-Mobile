@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { Themes } from '../../../../theme/themes';
 
 export const styles = StyleSheet.create({
     contener: {
@@ -8,7 +9,7 @@ export const styles = StyleSheet.create({
         justifyContent: "space-between",
         flexDirection: "row",
         borderBottomWidth: 1,
-        borderBottomColor: "#E0E0E0",
+        borderBottomColor: Themes.colors.white_cinze,
         paddingTop: 10,
         paddingBottom: 10,
         gap: 10,
@@ -22,9 +23,9 @@ export const styles = StyleSheet.create({
     },
 
     text: {
-        fontSize: 15,
+        fontSize: Themes.fonts.size.destc,
         fontWeight: 800,
-        color: "#232326",
+        color: Themes.colors.cinze,
     },
 
     button: {

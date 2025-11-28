@@ -64,71 +64,73 @@ export default function TelaControle() {
     return (
         <View style={styles.container}>
             <View style={styles.main}>
-                <View style={styles.caberacio_container}>
-                    <BoxConter titul="Entrada" style={"R$"} value={totalEntrada.toFixed(2).replace('.', ',')} cor='#24a56f' />
-                    <BoxConter titul="Saída" style={"R$"} value={totalSaida.toFixed(2).replace('.', ',')} cor='#a52424' />
-                    <BoxConter titul="Saldo" style={"R$"} value={saldo.toFixed(2).replace('.', ',')} cor='#2467a5' />
-                </View>
-                <View style={styles.contener_person}>
-                    <View style={styles.contener_input}>
-                        <DropDownPicker
-                            style={styles.drowp}
-                            open={open}
-                            value={value}
-                            items={option}
-                            setOpen={setOpen}
-                            setValue={setValue}
-                            setItems={setOption}
-                            placeholder="Selecione uma opção"
-                        />
-                        <Input placeH='Digite a descrição' onChangeText={e => setDescricao(e)} value={descricao} />
-                        <Input placeH='Digite o valor' onChangeText={e => setValor(e)} value={valor} numeric={true}/>
-                        <TouchableOpacity onPress={() => setMostrarPicker(true)} style={styles.drowpData}>
-                            <Text style={styles.drowpDataText}> {dataSelecionada ? `Data: ${dataSelecionada.toLocaleDateString()}` : "Selecionar data"}</Text>
-                        </TouchableOpacity>
-
-                        {mostrarPicker && (
-                            <DateTimePicker
-                                value={dataSelecionada ?? new Date()}
-                                mode="date"
-                                display="default"
-                                onChange={(event, date) => {
-                                    setMostrarPicker(false);
-                                    if (date) {
-                                        setDataSelecionada(date);
-                                    }
-                                }}
+                <ScrollView>
+                    <View style={styles.caberacio_container}>
+                        <BoxConter titul="Entrada" style={"R$"} value={totalEntrada.toFixed(2).replace('.', ',')} cor='#2DBA5E' />
+                        <BoxConter titul="Saída" style={"R$"} value={totalSaida.toFixed(2).replace('.', ',')} cor='#BA322D' />
+                        <BoxConter titul="Saldo" style={"R$"} value={saldo.toFixed(2).replace('.', ',')} cor='#2D5DBA' />
+                    </View>
+                    <View style={styles.contener_person}>
+                        <View style={styles.contener_input}>
+                            <DropDownPicker
+                                style={styles.drowp}
+                                open={open}
+                                value={value}
+                                items={option}
+                                setOpen={setOpen}
+                                setValue={setValue}
+                                setItems={setOption}
+                                placeholder="Selecione uma opção"
                             />
-                        )}
-                        <ButtonAdd title='Adicionar' onPress={handleAdd} />
-                    </View>
-                    <View style={styles.contener_list}>
-                        <View style={styles.legenda_tablet}>
-                            <Text style={styles.data}>Data</Text>
-                            <Text style={styles.tipo}>Tipo</Text>
-                            <Text style={styles.descri}>Descrição</Text>
-                            <Text style={styles.descri}>Valor</Text>
-
-                            <TouchableOpacity style={styles.buttonDelet} onPress={() => setList(() => [])}>
-                                <Text style={styles.textButton}>Limpar</Text>
+                            <Input placeH='Digite a descrição' onChangeText={e => setDescricao(e)} value={descricao} />
+                            <Input placeH='Digite o valor' onChangeText={e => setValor(e)} value={valor} numeric={true} />
+                            <TouchableOpacity onPress={() => setMostrarPicker(true)} style={styles.drowpData}>
+                                <Text style={styles.drowpDataText}> {dataSelecionada ? `📅 Data: ${dataSelecionada.toLocaleDateString()}` : "📅 Selecionar data"}</Text>
                             </TouchableOpacity>
-                        </View>
-                        
-                        <ScrollView contentContainerStyle={{ width: "100%" }}>
-                            {list.map((item, index) => (
-                                <Itens
-                                    key={index}
-                                    data={item.data}
-                                    tipo={item.tipo}
-                                    descricao={item.descricao}
-                                    valor={item.valor}
-                                    onPress={() => handRemove(index)}
-                                />
-                            ))}
-                        </ScrollView>
-                    </View>
 
-                </View>
+                            {mostrarPicker && (
+                                <DateTimePicker
+                                    value={dataSelecionada ?? new Date()}
+                                    mode="date"
+                                    display="default"
+                                    onChange={(event, date) => {
+                                        setMostrarPicker(false);
+                                        if (date) {
+                                            setDataSelecionada(date);
+                                        }
+                                    }}
+                                />
+                            )}
+                            <ButtonAdd title='Adicionar' onPress={handleAdd} />
+                        </View>
+                        <View style={styles.contener_list}>
+                            <View style={styles.legenda_tablet}>
+                                <Text style={styles.data}>Data</Text>
+                                <Text style={styles.tipo}>Tipo</Text>
+                                <Text style={styles.descri}>Descrição</Text>
+                                <Text style={styles.valor}>Valor</Text>
+
+                                <TouchableOpacity style={styles.buttonDelet} onPress={() => setList(() => [])}>
+                                    <Text style={styles.textButton}>Limpar</Text>
+                                </TouchableOpacity>
+                            </View>
+
+                            <ScrollView contentContainerStyle={{ width: "100%" }}>
+                                {list.map((item, index) => (
+                                    <Itens
+                                        key={index}
+                                        data={item.data}
+                                        tipo={item.tipo}
+                                        descricao={item.descricao}
+                                        valor={item.valor}
+                                        onPress={() => handRemove(index)}
+                                    />
+                                ))}
+                            </ScrollView>
+                        </View>
+
+                    </View>
+                </ScrollView>
             </View>
             <StatusBar style="auto" />
         </View>

@@ -1,10 +1,11 @@
 import { StyleSheet } from 'react-native';
+import { Themes } from "../../../theme/themes";
 
 export const styles = StyleSheet.create({
     container: {
         display: "flex",
         flex: 1,
-        backgroundColor: '#ffffffff',
+        backgroundColor: Themes.colors.siste,
     },
 
     main: {
@@ -13,21 +14,36 @@ export const styles = StyleSheet.create({
         flexDirection: "column",
     },
 
+    img: {
+        width: "100%",
+        height: "100%",
+        position: "absolute",
+        top: 0,
+        left: 0,
+    },
+
     headerContener: {
         display: "flex",
-        alignItems: "flex-start",
+        alignItems: "center",
+        justifyContent: 'center',
         flexDirection: "column",
-        backgroundColor: "#25679cff",
-        paddingTop: 20,
-        paddingBottom: 20,
-        paddingRight: 20,
-        paddingLeft: 20,
+        width: "100%",
+        height: 180,
+        overflow: "hidden",
+        borderBottomWidth: 6,
+        borderBottomColor: Themes.colors.blue_viol,
+    },
+
+    headerText: {
+        display: "flex",
+        alignItems: "flex-start",
+        justifyContent: 'center',
         gap: 15,
     },
 
     containerNav: {
         display: "flex",
-        alignItems: "center",
+        alignItems: "flex-start",
         flexDirection: "column",
         width: "100%",
         padding: 10
@@ -61,24 +77,29 @@ export const styles = StyleSheet.create({
     },
 
     titul: {
-        fontSize: 38,
+        fontSize: Themes.fonts.size.title_dest,
         textAlign: "center",
         fontWeight: 'bold',
-        color: '#000000',
+        color: Themes.colors.siste,
+        paddingTop: 5,
+        paddingRight: 5,
+        paddingLeft: 3,
+        paddingBottom: 3,
+        backgroundColor: Themes.colors.blue_viol,
     },
 
     subtitul: {
-        fontSize: 25,
-        textAlign: "center",
+        fontSize: Themes.fonts.size.title,
+        textAlign: "left",
         fontWeight: 'bold',
-        color: '#000000',
+        color: Themes.colors.dark,
         paddingTop: 15
     },
 
     descri: {
-        fontSize: 18,
+        fontSize: Themes.fonts.size.descri_1,
         textAlign: "left",
-        color: '#000000',
+        color: Themes.colors.siste,
     },
 
     button: {
@@ -96,19 +117,19 @@ export const styles = StyleSheet.create({
     buttonText: {
         color: "white",
         fontWeight: 600,
-        fontSize: 17,
+        fontSize: Themes.fonts.size.destc,
     },
 
     buttonPrim: {
-        backgroundColor: "#2D4BA6",
-    }, 
+        backgroundColor: Themes.colors.blue,
+    },
 
     buttonSeg: {
-        backgroundColor: "#2da2a6ff",
-    }, 
+        backgroundColor: Themes.colors.ciano,
+    },
 
     buttoTerc: {
-        backgroundColor: "#512da6ff",
-    }, 
+        backgroundColor: Themes.colors.roxo,
+    },
 
 });

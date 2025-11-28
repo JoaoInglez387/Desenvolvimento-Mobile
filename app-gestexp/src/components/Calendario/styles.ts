@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { Themes } from '../../../theme/themes';
 
 export const styles = StyleSheet.create({
     contener_calendario: {
@@ -9,7 +10,7 @@ export const styles = StyleSheet.create({
     },
 
     minCalendario: {
-        backgroundColor: "#fff",
+        backgroundColor: Themes.colors.siste,
         padding: 12,
         borderRadius: 12,
         width: "100%",
@@ -17,15 +18,15 @@ export const styles = StyleSheet.create({
     },
 
     titulCalendario: {
-        fontSize: 20,
+        fontSize: Themes.fonts.size.title_3,
         fontWeight: "700",
-        color: "#2467a5",
+        color: Themes.colors.blue,
         marginBottom: 4,
     },
 
     subTitulCalendario: {
-        fontSize: 16,
-          color: "#555",
+        fontSize: Themes.fonts.size.text,
+          color: Themes.colors.cinze,
           marginBottom: 10,
           textTransform: "capitalize",
     },

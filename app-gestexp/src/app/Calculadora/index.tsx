@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { styles } from './styles';
-import { View, Text } from 'react-native';
+import { View, Text, ScrollView } from 'react-native';
 import { useState } from 'react';
 import Input from '../../components/Input';
 import ButtonAdd from '../../components/Button';
@@ -49,7 +49,7 @@ export default function TelaCalculadora() {
         const valorFrete = parseFloat(frete.replace('R$', '').replace(',', '.')) || 0;
         const valorLucro = parseFloat(lucro.replace(',', '.').replace('%', '')) || 0;
 
-        if(valorProduto < 0 || valorImposto < 0 || valorFrete < 0 || valorLucro < 0) {
+        if (valorProduto < 0 || valorImposto < 0 || valorFrete < 0 || valorLucro < 0) {
             alert("Digite números maiores que 0!");
         }
 
@@ -89,23 +89,25 @@ export default function TelaCalculadora() {
 
     return (
         <View style={styles.container}>
-            <View style={styles.main}>
-                <View style={styles.contener_person}>
-                    <View style={styles.contener_input}>
-                        <Input placeH='Digite o valor do produto' onChangeText={e => setProduto(e)} value={produto} numeric={true}/>
-                        <Input placeH='Digite o valor do imposto (opcional) (% ou R$)' onChangeText={e => setImposto(e)} value={imposto}/>
-                        <Input placeH='Digite o valor de frente (opcional)' onChangeText={e => setFrete(e)} value={frete} numeric={true}/>
-                        <Input placeH='Digite o valor que deseja receber (% ou R$)' onChangeText={e => setLucro(e)} value={lucro}/>
-                        <ButtonAdd title='Calcular' onPress={Calculadora} />
-                    </View>
-                    <View style={styles.contener_resultado}>
-                        <Text style={styles.text_titul}>Deve cobrar</Text>
-                        <Text style={styles.valor}>R$ {calcular}</Text>
-                        <Text style={styles.text_descri}>Lucro: R$ {lucroReais}</Text>
-                        <Text style={styles.text_descri}>Margem de lucro de {margemLucro}%</Text>
+            <ScrollView>
+                <View style={styles.main}>
+                    <View style={styles.contener_person}>
+                        <View style={styles.contener_input}>
+                            <Input placeH='Digite o valor do produto' onChangeText={e => setProduto(e)} value={produto} numeric={true} />
+                            <Input placeH='Digite o valor do imposto (opcional) (% ou R$)' onChangeText={e => setImposto(e)} value={imposto} />
+                            <Input placeH='Digite o valor de frente (opcional)' onChangeText={e => setFrete(e)} value={frete} numeric={true} />
+                            <Input placeH='Digite o valor que deseja receber (% ou R$)' onChangeText={e => setLucro(e)} value={lucro} />
+                            <ButtonAdd title='Calcular' onPress={Calculadora} />
+                        </View>
+                        <View style={styles.contener_resultado}>
+                            <Text style={styles.text_titul}>Deve cobrar</Text>
+                            <Text style={styles.valor}>R$ {calcular}</Text>
+                            <Text style={styles.text_descri}>Lucro: R$ {lucroReais}</Text>
+                            <Text style={styles.text_descri}>Margem de lucro de {margemLucro}%</Text>
+                        </View>
                     </View>
                 </View>
-            </View>
+            </ScrollView>
             <StatusBar style="auto" />
         </View>
     );
